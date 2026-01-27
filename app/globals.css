@@ -1,3 +1,59 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: #d0d0ce;
+  --color-foreground: #0f0f0f;
+  --color-muted: #6b6b6b;
+  --color-border: #e5e5e5;
+  --color-coral: #ff6f61;
+  --color-teal: #84cec3;
+  --color-accent: #111111;
+
+  /* Typography */
+  --font-size-display-large: clamp(2.5rem, 6vw, 4.5rem);
+  --font-size-display-large--line-height: 1.1;
+  --font-size-display-large--letter-spacing: -0.02em;
+
+  --font-size-heading-1: 2.25rem;
+  --font-size-heading-1--line-height: 1.2;
+  --font-size-heading-1--letter-spacing: -0.01em;
+
+  --font-size-heading-2: 2rem;
+  --font-size-heading-2--line-height: 1.3;
+
+  --font-size-heading-3: 1.5rem;
+  --font-size-heading-3--line-height: 1.4;
+
+  --font-size-body-large: 1.25rem;
+  --font-size-body-large--line-height: 1.6;
+
+  --font-size-body: 1rem;
+  --font-size-body--line-height: 1.6;
+
+  --font-size-body-small: 0.875rem;
+  --font-size-body-small--line-height: 1.6;
+
+  --font-size-caption: 0.75rem;
+  --font-size-caption--line-height: 1.5;
+  --font-size-caption--letter-spacing: 0.05em;
+
+  /* Spacing */
+  --spacing-section: 4rem;
+
+  /* Max widths */
+  --container-max-width-content: 65ch;
+  --container-max-width-wide: 1200px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
