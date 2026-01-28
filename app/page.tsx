@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import ProjectCard from "@/components/ProjectCard";
+import ChallengeCard from "@/components/ChallengeCard";
 
 export default function Home() {
   return (
@@ -96,6 +97,51 @@ export default function Home() {
                 description="Digital Gift Card Platform & Integrations — led product strategy and B2B partnerships for multi-platform launch."
                 achievement="Multi-Platform Launch"
                 tags={["Product Strategy", "B2B Partnerships", "Scale-up"]}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Challenges & Experiments */}
+        <section
+          id="challenges"
+          className="px-8 py-section border-t border-border"
+        >
+          <div className="max-w-wide mx-auto">
+            <div className="mb-12">
+              <h2 className="text-heading-1 font-bold mb-4">
+                Challenges & Experiments
+              </h2>
+              <p className="text-body-large text-muted max-w-[44ch]">
+                Small problems, clearly framed. This section shows how I think
+                about product, systems and trade-offs.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <ChallengeCard
+                title="API Pagination Strategy"
+                problem="Large result sets caused slow client-side rendering and complex state handling in the frontend."
+                approach="Compared offset-based and cursor-based pagination across performance, caching behavior, API complexity and frontend UX."
+                outcome="Cursor-based pagination reduced response time and simplified frontend logic while scaling more reliably."
+                tags={["API Design", "Performance", "Trade-offs"]}
+                href="https://github.com/denescsaszar"
+              />
+              <ChallengeCard
+                title="Real-Time Sync Architecture"
+                problem="Multiple users editing data simultaneously led to race conditions and stale state issues across clients."
+                approach="Evaluated WebSocket, Server-Sent Events, and polling. Analyzed latency requirements, server load, and client complexity."
+                outcome="WebSocket with event sourcing eliminated race conditions and reduced latency by 400ms while keeping architecture maintainable."
+                tags={["Real-Time Systems", "Architecture", "Scalability"]}
+                href="https://github.com/denescsaszar"
+              />
+              <ChallengeCard
+                title="Multi-Region Data Consistency"
+                problem="Operating across 15 European markets required managing data consistency with varying network latency and regulatory constraints."
+                approach="Designed eventual consistency model with conflict resolution, local caching strategies, and GDPR-compliant data governance."
+                outcome="Reduced data sync latency to under 2 seconds globally while maintaining compliance across all regions."
+                tags={["Distributed Systems", "Data Consistency", "Compliance"]}
+                href="https://github.com/denescsaszar"
               />
             </div>
           </div>
