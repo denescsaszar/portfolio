@@ -7,8 +7,14 @@ import FadeIn from "@/components/FadeIn";
 export default function Home() {
   return (
     <div>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-background font-semibold"
+      >
+        Skip to content
+      </a>
       <Navigation />
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="min-h-screen flex items-start px-8 pt-24 pb-24 max-w-wide mx-auto">
           <div className="w-full mt-20">
