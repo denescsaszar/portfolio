@@ -21,6 +21,7 @@ export default function ChallengeCard({
       target="_blank"
       rel="noopener noreferrer"
       className="group block border border-border p-6 no-underline transition-all duration-300 hover:border-teal hover:shadow-lg hover:shadow-teal/5"
+      aria-label={`${title} - View case study on GitHub`}
     >
       <h3 className="text-heading-2 font-bold mb-6 group-hover:text-teal transition-colors duration-300">
         {title}
@@ -49,7 +50,7 @@ export default function ChallengeCard({
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2" aria-label="Tags">
         {tags.map((tag) => (
           <span
             key={tag}
