@@ -16,8 +16,8 @@ export default function Home() {
       <Navigation />
       <main id="main-content">
         {/* Hero */}
-        <section className="min-h-screen flex items-start px-8 pt-24 pb-24 max-w-wide mx-auto">
-          <div className="w-full mt-20">
+        <section className="min-h-screen flex items-start px-6 md:px-8 pt-24 pb-16 md:pb-24 max-w-wide mx-auto">
+          <div className="w-full mt-12 md:mt-20">
             <FadeIn>
               <p className="text-body-small uppercase tracking-widest text-muted mb-4">
                 Product & Project Manager
@@ -25,7 +25,7 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.1}>
-              <h1 className="text-display-large font-bold mb-6">
+              <h1 className="text-display-large font-bold mb-6 leading-[1.1]">
                 <span className="text-coral">Denes Csaszar</span>
                 <br />
                 Where product, tech
@@ -35,14 +35,14 @@ export default function Home() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-body-large text-muted mb-12 max-w-[48ch]">
+              <p className="text-body-large text-muted mb-8 md:mb-12 max-w-[48ch]">
                 7+ years bridging technical execution and business strategy
                 across digital products in DACH & 15 European markets.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="flex gap-8">
+              <div className="flex flex-wrap gap-4 md:gap-8">
                 <a
                   href="#projects"
                   className="text-body-small font-medium text-foreground no-underline relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-coral"
@@ -69,11 +69,11 @@ export default function Home() {
         {/* Selected Work */}
         <section
           id="projects"
-          className="px-8 py-section border-t border-border"
+          className="px-6 md:px-8 py-section border-t border-border"
         >
           <div className="max-w-wide mx-auto">
             <FadeIn>
-              <div className="mb-12">
+              <div className="mb-8 md:mb-12">
                 <h2 className="text-heading-1 font-bold mb-4">Selected Work</h2>
                 <p className="text-body-large text-muted max-w-[36ch]">
                   Product leadership across digital products, API integrations,
@@ -82,7 +82,7 @@ export default function Home() {
               </div>
             </FadeIn>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ProjectCard
                   title="idealo"
@@ -122,11 +122,11 @@ export default function Home() {
         {/* Challenges & Experiments */}
         <section
           id="challenges"
-          className="px-8 py-section border-t border-border"
+          className="px-6 md:px-8 py-section border-t border-border"
         >
           <div className="max-w-wide mx-auto">
             <FadeIn>
-              <div className="mb-12">
+              <div className="mb-8 md:mb-12">
                 <h2 className="text-heading-1 font-bold mb-4">
                   Challenges & Experiments
                 </h2>
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </FadeIn>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ChallengeCard
                   title="API Pagination Strategy"
@@ -177,11 +177,14 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section id="about" className="px-8 py-section border-t border-border">
+        <section
+          id="about"
+          className="px-6 md:px-8 py-section border-t border-border"
+        >
           <div className="max-w-wide mx-auto">
             <div className="max-w-[700px]">
               <FadeIn>
-                <h2 className="text-heading-1 font-bold mb-8">About</h2>
+                <h2 className="text-heading-1 font-bold mb-6 md:mb-8">About</h2>
 
                 <p className="text-body leading-relaxed mb-6">
                   Project Manager bridging technical execution and business
@@ -197,7 +200,7 @@ export default function Home() {
                   international product launches.
                 </p>
 
-                <p className="text-body leading-relaxed mb-12">
+                <p className="text-body leading-relaxed mb-8 md:mb-12">
                   Now I combine that product expertise with full-stack
                   development skills (JavaScript, React, Next.js, Python) and
                   Scrum certifications to bridge the gap between business needs
@@ -206,11 +209,11 @@ export default function Home() {
               </FadeIn>
 
               <FadeIn delay={0.1}>
-                <h3 className="text-heading-2 font-bold mb-6">
+                <h3 className="text-heading-2 font-bold mb-4 md:mb-6">
                   Skills & Technologies
                 </h3>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
                   {[
                     "Product Strategy",
                     "Project Management",
@@ -225,7 +228,7 @@ export default function Home() {
                   ].map((skill) => (
                     <div
                       key={skill}
-                      className="px-4 py-3 border border-border text-center text-body-small font-medium"
+                      className="px-3 md:px-4 py-2 md:py-3 border border-border text-center text-body-small font-medium"
                     >
                       {skill}
                     </div>
@@ -239,7 +242,7 @@ export default function Home() {
         {/* Contact */}
         <section
           id="contact"
-          className="px-8 py-section border-t border-border"
+          className="px-6 md:px-8 py-section border-t border-border"
         >
           <div className="max-w-wide mx-auto">
             <div className="max-w-[700px]">
@@ -251,10 +254,10 @@ export default function Home() {
                   Europe. Berlin-based, remote-friendly.
                 </p>
 
-                <div className="flex flex-wrap gap-4 mb-12">
+                <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
                   <a
                     href="mailto:hello@denescsaszar.com"
-                    className="px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
+                    className="px-5 md:px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
                   >
                     Send Email
                   </a>
@@ -262,7 +265,7 @@ export default function Home() {
                     href="https://linkedin.com/in/denescsaszar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
+                    className="px-5 md:px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
                   >
                     LinkedIn
                   </a>
@@ -270,7 +273,7 @@ export default function Home() {
                     href="https://github.com/denescsaszar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
+                    className="px-5 md:px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
                   >
                     GitHub
                   </a>
