@@ -43,25 +43,25 @@ export default function Navigation() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#projects"
+            href="/projects"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Work
           </a>
           <a
-            href="#challenges"
+            href="/#challenges"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Thinking
           </a>
           <a
-            href="#about"
+            href="/#about"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             About
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Contact
@@ -172,7 +172,7 @@ export default function Navigation() {
       >
         <div className="flex flex-col p-6 gap-6">
           <a
-            href="#projects"
+            href="/projects"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
@@ -180,7 +180,7 @@ export default function Navigation() {
             Work
           </a>
           <a
-            href="#challenges"
+            href="/#challenges"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
@@ -188,7 +188,7 @@ export default function Navigation() {
             Thinking
           </a>
           <a
-            href="#about"
+            href="/#about"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
@@ -196,7 +196,7 @@ export default function Navigation() {
             About
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
