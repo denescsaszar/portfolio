@@ -49,27 +49,27 @@ Accent:      #111111          Accent:      #ffffff
 | #   | Step                                                 | Commit    | Status |
 | --- | ---------------------------------------------------- | --------- | ------ |
 | 03  | Navigation — fixed bar, DC logo, blur, mobile drawer | `step-03` | ✅     |
-| 04  | Hero section — name, role, headline, CTAs            | `step-04` | ⬜     |
+| 04  | Hero section — name, role, headline, CTAs            | `step-04` | ✅     |
 
 ### Phase 3: Content Sections
 
 | #   | Step                                               | Commit    | Status |
 | --- | -------------------------------------------------- | --------- | ------ |
-| 05  | ProjectCard component — bordered card with tags    | `step-05` | ⬜     |
-| 06  | Projects section — grid of 3 project cards         | `step-06` | ⬜     |
-| 07  | ChallengeCard component — problem/approach/outcome | `step-07` | ⬜     |
-| 08  | Challenges section — grid of challenge cards       | `step-08` | ⬜     |
-| 09  | About section — prose narrative + skills grid      | `step-09` | ⬜     |
-| 10  | Contact section — CTAs + contact grid              | `step-10` | ⬜     |
-| 11  | Footer — minimal centered footer                   | `step-11` | ⬜     |
+| 05  | ProjectCard component — bordered card with tags    | `step-05` | ✅     |
+| 06  | Projects section — grid of 3 project cards         | `step-06` | ✅.    |
+| 07  | ChallengeCard component — problem/approach/outcome | `step-07` | ✅.    |
+| 08  | Challenges section — grid of challenge cards       | `step-08` | ✅     |
+| 09  | About section — prose narrative + skills grid      | `step-09` | ✅     |
+| 10  | Contact section — CTAs + contact grid              | `step-10` | ✅     |
+| 11  | Footer — minimal centered footer                   | `step-11` | ✅     |
 
 ### Phase 4: Dark Mode
 
 | #   | Step                                               | Commit    | Status |
 | --- | -------------------------------------------------- | --------- | ------ |
-| 12  | ThemeProvider — React Context for dark/light state | `step-12` | ⬜     |
-| 13  | ThemeToggle — wire up the nav button               | `step-13` | ⬜     |
-| 14  | Dark mode CSS — variable swap + transitions        | `step-14` | ⬜     |
+| 12  | ThemeProvider — React Context for dark/light state | `step-12` | ✅     |
+| 13  | ThemeToggle — wire up the nav button               | `step-13` | ✅     |
+| 14  | Dark mode CSS — variable swap + transitions        | `step-14` | ✅     |
 | 15  | Dark mode polish — verify every section            | `step-15` | ⬜     |
 
 ### Phase 5: Animations & Interactions
