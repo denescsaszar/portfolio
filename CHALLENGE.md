@@ -70,13 +70,13 @@ Accent:      #111111          Accent:      #ffffff
 | 12  | ThemeProvider — React Context for dark/light state | `step-12` | ✅     |
 | 13  | ThemeToggle — wire up the nav button               | `step-13` | ✅     |
 | 14  | Dark mode CSS — variable swap + transitions        | `step-14` | ✅     |
-| 15  | Dark mode polish — verify every section            | `step-15` | ⬜     |
+| 15  | Dark mode polish — verify every section            | `step-15` | ✅     |
 
 ### Phase 5: Animations & Interactions
 
 | #   | Step                                               | Commit    | Status |
 | --- | -------------------------------------------------- | --------- | ------ |
-| 16  | FadeIn component — scroll-triggered animations     | `step-16` | ⬜     |
+| 16  | FadeIn component — scroll-triggered animations     | `step-16` | ✅.    |
 | 17  | Wrap sections in FadeIn — staggered reveals        | `step-17` | ⬜     |
 | 18  | Micro-interactions — hover states, link underlines | `step-18` | ⬜     |
 | 19  | Hero animation — fade-in on page load              | `step-19` | ⬜     |
