@@ -13,20 +13,8 @@ export default function ProjectCard({
   tags,
   href,
 }: ProjectCardProps) {
-  const CardWrapper = href ? "a" : "article";
-  const cardProps = href
-    ? {
-        href,
-        className:
-          "group block border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5 no-underline",
-      }
-    : {
-        className:
-          "group border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5",
-      };
-
-  return (
-    <CardWrapper {...cardProps}>
+  const content = (
+    <>
       <div className="mb-3 md:mb-4">
         <span className="text-body-small text-coral font-medium uppercase tracking-wide">
           {achievement}
@@ -51,6 +39,19 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
-    </CardWrapper>
+    </>
   );
+
+  const className =
+    "group border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5";
+
+  if (href) {
+    return (
+      <a href={href} className={`${className} no-underline block`}>
+        {content}
+      </a>
+    );
+  }
+
+  return <article className={className}>{content}</article>;
 }

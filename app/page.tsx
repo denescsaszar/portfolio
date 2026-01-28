@@ -81,6 +81,7 @@ export default function Home() {
                 </p>
               </div>
             </FadeIn>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ProjectCard
