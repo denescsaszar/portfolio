@@ -103,3 +103,13 @@ button,
 .group:hover {
   transform: translateY(-2px);
 }
+/* Focus styles for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 2px;
+}
+
+/* Remove default focus for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
