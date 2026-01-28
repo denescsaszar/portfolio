@@ -105,8 +105,8 @@ export default function ZalandoCaseStudy() {
           href: "/case-studies/deutsche-bank",
         }}
         next={{
-          title: "Google & Apple",
-          href: "/case-studies/google-aldi",
+          title: "idealo",
+          href: "/case-studies/idealo",
         }}
       />
     </CaseStudyLayout>

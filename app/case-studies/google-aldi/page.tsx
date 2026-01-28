@@ -103,12 +103,12 @@ export default function GoogleAldiCaseStudy() {
 
       <CaseStudyNav
         prev={{
-          title: "Zalando",
-          href: "/case-studies/zalando",
-        }}
-        next={{
           title: "idealo",
           href: "/case-studies/idealo",
+        }}
+        next={{
+          title: "Deutsche Bank",
+          href: "/case-studies/deutsche-bank",
         }}
       />
     </CaseStudyLayout>

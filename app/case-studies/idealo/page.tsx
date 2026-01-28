@@ -100,12 +100,12 @@ export default function IdealoCaseStudy() {
 
       <CaseStudyNav
         prev={{
-          title: "Google & Apple",
-          href: "/case-studies/google-aldi",
-        }}
-        next={{
           title: "Zalando",
           href: "/case-studies/zalando",
+        }}
+        next={{
+          title: "Google & Apple",
+          href: "/case-studies/google-aldi",
         }}
       />
     </CaseStudyLayout>
