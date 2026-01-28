@@ -20,14 +20,14 @@ export default function ChallengeCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block border border-border p-6 no-underline transition-all duration-300 hover:border-teal hover:shadow-lg hover:shadow-teal/5"
+      className="group block border border-border p-5 md:p-6 no-underline transition-all duration-300 hover:border-teal hover:shadow-lg hover:shadow-teal/5"
       aria-label={`${title} - View case study on GitHub`}
     >
-      <h3 className="text-heading-2 font-bold mb-6 group-hover:text-teal transition-colors duration-300">
+      <h3 className="text-heading-2 font-bold mb-4 md:mb-6 group-hover:text-teal transition-colors duration-300">
         {title}
       </h3>
 
-      <div className="space-y-4 mb-6">
+      <div className="space-y-3 md:space-y-4 mb-5 md:mb-6">
         <div>
           <p className="text-body-small text-muted uppercase tracking-wide mb-1">
             Problem
@@ -54,7 +54,7 @@ export default function ChallengeCard({
         {tags.map((tag) => (
           <span
             key={tag}
-            className="text-body-small px-3 py-1 border border-border transition-colors duration-300 group-hover:border-teal/30"
+            className="text-body-small px-3 py-1.5 border border-border transition-colors duration-300 group-hover:border-teal/30"
           >
             {tag}
           </span>
