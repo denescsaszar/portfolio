@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTheme } from "@/components/ThemeProvider";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <>
@@ -44,9 +46,13 @@ export default function Navigation() {
             </a>
           </div>
 
-          {/* Dark mode toggle — placeholder for now */}
-          <button className="text-body-small font-medium uppercase tracking-wider text-muted hover:text-foreground transition-colors">
-            Dark
+          {/* Dark mode toggle */}
+          <button
+            onClick={toggleTheme}
+            className="text-body-small font-medium uppercase tracking-wider text-muted hover:text-foreground transition-colors"
+            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+          >
+            {theme === "light" ? "Dark" : "Light"}
           </button>
 
           {/* Mobile hamburger */}
