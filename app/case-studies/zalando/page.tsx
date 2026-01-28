@@ -1,5 +1,6 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import CaseStudySection from "@/components/CaseStudySection";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 export default function ZalandoCaseStudy() {
   return (
@@ -97,6 +98,17 @@ export default function ZalandoCaseStudy() {
           that protected brand consistency and operational efficiency.
         </p>
       </CaseStudySection>
+
+      <CaseStudyNav
+        prev={{
+          title: "Deutsche Bank",
+          href: "/case-studies/deutsche-bank",
+        }}
+        next={{
+          title: "Google & Apple",
+          href: "/case-studies/google-aldi",
+        }}
+      />
     </CaseStudyLayout>
   );
 }

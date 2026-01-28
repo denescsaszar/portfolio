@@ -1,5 +1,6 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import CaseStudySection from "@/components/CaseStudySection";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 export default function DeutscheBankCaseStudy() {
   return (
@@ -92,6 +93,17 @@ export default function DeutscheBankCaseStudy() {
           alignment were critical success factors.
         </p>
       </CaseStudySection>
+
+      <CaseStudyNav
+        prev={{
+          title: "Google & Apple",
+          href: "/case-studies/google-aldi",
+        }}
+        next={{
+          title: "Zalando",
+          href: "/case-studies/zalando",
+        }}
+      />
     </CaseStudyLayout>
   );
 }

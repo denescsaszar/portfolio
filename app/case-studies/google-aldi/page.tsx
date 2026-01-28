@@ -1,5 +1,6 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import CaseStudySection from "@/components/CaseStudySection";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 export default function GoogleAldiCaseStudy() {
   return (
@@ -99,6 +100,17 @@ export default function GoogleAldiCaseStudy() {
           helped us anticipate API changes and resolve issues quickly.
         </p>
       </CaseStudySection>
+
+      <CaseStudyNav
+        prev={{
+          title: "Zalando",
+          href: "/case-studies/zalando",
+        }}
+        next={{
+          title: "Deutsche Bank",
+          href: "/case-studies/deutsche-bank",
+        }}
+      />
     </CaseStudyLayout>
   );
 }
