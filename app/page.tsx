@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import ProjectCard from "@/components/ProjectCard";
 import ChallengeCard from "@/components/ChallengeCard";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -277,6 +278,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
