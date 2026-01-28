@@ -49,10 +49,14 @@ export default function Navigation() {
           {/* Dark mode toggle */}
           <button
             onClick={toggleTheme}
-            className="text-body-small font-medium uppercase tracking-wider text-muted hover:text-foreground transition-colors"
+            className="w-10 h-5 rounded-full bg-border relative transition-colors hover:bg-muted/50"
             aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
           >
-            {theme === "light" ? "Dark" : "Light"}
+            <span
+              className={`absolute top-0.5 w-4 h-4 rounded-full bg-foreground transition-all ${
+                theme === "dark" ? "left-5" : "left-0.5"
+              }`}
+            />
           </button>
 
           {/* Mobile hamburger */}
