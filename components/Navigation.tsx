@@ -1,15 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "./ThemeProvider";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
+  // Close menu on escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+
+    if (isOpen) {
+      document.addEventListener("keydown", handleEscape);
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 px-8 py-4 bg-background/80 backdrop-blur-md border-b border-border"
+      className="fixed top-0 left-0 right-0 z-50 px-6 md:px-8 py-4 bg-background/80 backdrop-blur-md border-b border-border"
       aria-label="Main navigation"
     >
       <div className="max-w-wide mx-auto flex items-center justify-between">
@@ -99,7 +117,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 -mr-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
@@ -133,59 +151,70 @@ export default function Navigation() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Backdrop */}
       {isOpen && (
         <div
-          id="mobile-menu"
-          className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border"
-          role="menu"
-        >
-          <div className="flex flex-col p-8 gap-6">
-            <a
-              href="#projects"
-              className="text-body font-medium no-underline"
-              onClick={() => setIsOpen(false)}
-              role="menuitem"
-            >
-              Work
-            </a>
-            <a
-              href="#challenges"
-              className="text-body font-medium no-underline"
-              onClick={() => setIsOpen(false)}
-              role="menuitem"
-            >
-              Thinking
-            </a>
-            <a
-              href="#about"
-              className="text-body font-medium no-underline"
-              onClick={() => setIsOpen(false)}
-              role="menuitem"
-            >
-              About
-            </a>
-            <a
-              href="#contact"
-              className="text-body font-medium no-underline"
-              onClick={() => setIsOpen(false)}
-              role="menuitem"
-            >
-              Contact
-            </a>
-            <button
-              onClick={() => {
-                toggleTheme();
-                setIsOpen(false);
-              }}
-              className="text-body font-medium text-left"
-              role="menuitem"
-            >
-              {theme === "dark" ? "Light Mode" : "Dark Mode"}
-            </button>
-          </div>
-        </div>
+          className="md:hidden fixed inset-0 top-[57px] bg-background/80 backdrop-blur-sm z-40"
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
       )}
+
+      {/* Mobile Menu */}
+      <div
+        id="mobile-menu"
+        className={`md:hidden fixed top-[57px] left-0 right-0 bg-background border-b border-border z-50 transition-all duration-300 ${
+          isOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-4 pointer-events-none"
+        }`}
+        role="menu"
+      >
+        <div className="flex flex-col p-6 gap-6">
+          <a
+            href="#projects"
+            className="text-body-large font-medium no-underline py-2"
+            onClick={() => setIsOpen(false)}
+            role="menuitem"
+          >
+            Work
+          </a>
+          <a
+            href="#challenges"
+            className="text-body-large font-medium no-underline py-2"
+            onClick={() => setIsOpen(false)}
+            role="menuitem"
+          >
+            Thinking
+          </a>
+          <a
+            href="#about"
+            className="text-body-large font-medium no-underline py-2"
+            onClick={() => setIsOpen(false)}
+            role="menuitem"
+          >
+            About
+          </a>
+          <a
+            href="#contact"
+            className="text-body-large font-medium no-underline py-2"
+            onClick={() => setIsOpen(false)}
+            role="menuitem"
+          >
+            Contact
+          </a>
+          <button
+            onClick={() => {
+              toggleTheme();
+              setIsOpen(false);
+            }}
+            className="text-body-large font-medium text-left py-2"
+            role="menuitem"
+          >
+            {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          </button>
+        </div>
+      </div>
     </nav>
   );
 }
