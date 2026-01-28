@@ -146,6 +146,62 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* About */}
+        <section id="about" className="px-8 py-section border-t border-border">
+          <div className="max-w-wide mx-auto">
+            <div className="max-w-[700px]">
+              <h2 className="text-heading-1 font-bold mb-8">About</h2>
+
+              <p className="text-body leading-relaxed mb-6">
+                Project Manager bridging technical execution and business
+                strategy. With 7+ years of experience managing digital products
+                across Europe, I've built a rare combination of deep product
+                thinking and technical literacy.
+              </p>
+
+              <p className="text-body leading-relaxed mb-6">
+                I've led cross-functional teams, managed seven-figure budgets,
+                and shipped products that generated measurable business impact.
+                My background spans e-commerce, API integrations, and
+                international product launches.
+              </p>
+
+              <p className="text-body leading-relaxed mb-12">
+                Now I combine that product expertise with full-stack development
+                skills (JavaScript, React, Next.js, Python) and Scrum
+                certifications to bridge the gap between business needs and
+                technical execution.
+              </p>
+
+              <h3 className="text-heading-2 font-bold mb-6">
+                Skills & Technologies
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {[
+                  "Product Strategy",
+                  "Project Management",
+                  "API Integration",
+                  "Agile / Scrum",
+                  "JavaScript",
+                  "React",
+                  "Next.js",
+                  "Python",
+                  "SQL",
+                  "Figma",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="px-4 py-3 border border-border text-center text-body-small font-medium"
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
