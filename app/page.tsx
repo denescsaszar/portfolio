@@ -81,7 +81,6 @@ export default function Home() {
                 </p>
               </div>
             </FadeIn>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ProjectCard
@@ -105,6 +104,7 @@ export default function Home() {
                     "Stakeholder Mgmt",
                     "International Teams",
                   ]}
+                  href="/case-studies/zalando"
                 />
               </FadeIn>
               <FadeIn delay={0.3}>
@@ -113,6 +113,7 @@ export default function Home() {
                   description="Digital Gift Card Platform & Integrations — led product strategy and B2B partnerships for multi-platform launch."
                   achievement="Multi-Platform Launch"
                   tags={["Product Strategy", "B2B Partnerships", "Scale-up"]}
+                  href="/case-studies/google-aldi"
                 />
               </FadeIn>
             </div>

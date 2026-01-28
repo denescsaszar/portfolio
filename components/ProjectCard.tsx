@@ -3,6 +3,7 @@ type ProjectCardProps = {
   description: string;
   achievement: string;
   tags: string[];
+  href?: string;
 };
 
 export default function ProjectCard({
@@ -10,9 +11,22 @@ export default function ProjectCard({
   description,
   achievement,
   tags,
+  href,
 }: ProjectCardProps) {
+  const CardWrapper = href ? "a" : "article";
+  const cardProps = href
+    ? {
+        href,
+        className:
+          "group block border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5 no-underline",
+      }
+    : {
+        className:
+          "group border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5",
+      };
+
   return (
-    <article className="group border border-border p-5 md:p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5">
+    <CardWrapper {...cardProps}>
       <div className="mb-3 md:mb-4">
         <span className="text-body-small text-coral font-medium uppercase tracking-wide">
           {achievement}
@@ -37,6 +51,6 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
-    </article>
+    </CardWrapper>
   );
 }
