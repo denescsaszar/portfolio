@@ -88,3 +88,18 @@ html {
     border-color 0.3s ease,
     color 0.3s ease;
 }
+/* Micro-interactions */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+[role="button"] {
+  transition: all 0.2s ease;
+}
+
+/* Card hover lift effect */
+.group:hover {
+  transform: translateY(-2px);
+}

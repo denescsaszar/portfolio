@@ -12,22 +12,29 @@ export default function ProjectCard({
   tags,
 }: ProjectCardProps) {
   return (
-    <div className="p-8 border border-border bg-background transition-all hover:border-accent hover:-translate-y-1">
-      <p className="text-body-small font-semibold text-coral mb-4">
-        ✓ {achievement}
-      </p>
-      <h3 className="text-heading-3 font-bold mb-3">{title}</h3>
-      <p className="text-body text-muted mb-6 leading-relaxed">{description}</p>
+    <article className="group border border-border p-6 flex flex-col h-full transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5">
+      <div className="mb-4">
+        <span className="text-body-small text-coral font-medium uppercase tracking-wide">
+          {achievement}
+        </span>
+      </div>
+
+      <h3 className="text-heading-2 font-bold mb-3 group-hover:text-coral transition-colors duration-300">
+        {title}
+      </h3>
+
+      <p className="text-body text-muted mb-6 flex-grow">{description}</p>
+
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="text-caption px-3 py-1.5 border border-border text-muted uppercase tracking-wide"
+            className="text-body-small px-3 py-1 border border-border transition-colors duration-300 group-hover:border-coral/30"
           >
             {tag}
           </span>
         ))}
       </div>
-    </div>
+    </article>
   );
 }
