@@ -202,6 +202,80 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Contact */}
+        <section
+          id="contact"
+          className="px-8 py-section border-t border-border"
+        >
+          <div className="max-w-wide mx-auto">
+            <div className="max-w-[700px]">
+              <h2 className="text-heading-1 font-bold mb-6">Let's Talk</h2>
+
+              <p className="text-body leading-relaxed mb-8">
+                Open to Product Manager and Project Manager roles across Europe.
+                Berlin-based, remote-friendly.
+              </p>
+
+              <div className="flex flex-wrap gap-4 mb-12">
+                <a
+                  href="mailto:hello@denescsaszar.com"
+                  className="px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
+                >
+                  Send Email
+                </a>
+                <a
+                  href="https://linkedin.com/in/denescsaszar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/denescsaszar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-accent font-semibold hover:bg-accent hover:text-background transition-colors no-underline"
+                >
+                  GitHub
+                </a>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-body-small">
+                <div>
+                  <p className="text-muted uppercase tracking-wide mb-1">
+                    Email
+                  </p>
+                  <a
+                    href="mailto:hello@denescsaszar.com"
+                    className="hover:text-muted transition-colors no-underline"
+                  >
+                    csaszar.denes@gmail.com
+                  </a>
+                </div>
+                <div>
+                  <p className="text-muted uppercase tracking-wide mb-1">
+                    GitHub
+                  </p>
+                  <a
+                    href="https://github.com/denescsaszar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-muted transition-colors no-underline"
+                  >
+                    github.com/denescsaszar
+                  </a>
+                </div>
+                <div>
+                  <p className="text-muted uppercase tracking-wide mb-1">
+                    Location
+                  </p>
+                  <p>Berlin, Germany · EU Remote</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
