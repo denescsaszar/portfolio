@@ -107,8 +107,8 @@ export default function GoogleAldiCaseStudy() {
           href: "/case-studies/zalando",
         }}
         next={{
-          title: "Deutsche Bank",
-          href: "/case-studies/deutsche-bank",
+          title: "idealo",
+          href: "/case-studies/idealo",
         }}
       />
     </CaseStudyLayout>

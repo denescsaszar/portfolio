@@ -93,6 +93,7 @@ export default function Home() {
                     "Project Management",
                     "Partner Coordination",
                   ]}
+                  href="/case-studies/idealo"
                 />
               </FadeIn>
               <FadeIn delay={0.2}>
