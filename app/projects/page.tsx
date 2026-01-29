@@ -1,43 +1,59 @@
+"use client";
+
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
+const projects = [
+  {
+    title: "idealo",
+    description:
+      "API Integration & Partner Onboarding — coordinated technical integration and partner rollout for one of Europe's leading price comparison platforms.",
+    achievement: "Successful Rollout",
+    tags: ["API Integration", "Project Management", "Partner Coordination"],
+    href: "/case-studies/idealo",
+    category: "E-Commerce",
+  },
+  {
+    title: "Zalando",
+    description:
+      "Marketing & Campaign Operations across 15 European markets — managed seven-figure budgets and coordinated international teams.",
+    achievement: "€2M+ Budgets Managed",
+    tags: ["Campaign Ops", "Stakeholder Mgmt", "International Teams"],
+    href: "/case-studies/zalando",
+    category: "E-Commerce",
+  },
+  {
+    title: "Google & Apple",
+    description:
+      "Digital Gift Card Platform & Integrations — led product strategy and B2B partnerships for multi-platform launch.",
+    achievement: "Multi-Platform Launch",
+    tags: ["Product Strategy", "B2B Partnerships", "Scale-up"],
+    href: "/case-studies/google-aldi",
+    category: "Retail",
+  },
+  {
+    title: "Deutsche Bank",
+    description:
+      "Digital transformation initiatives for retail banking products — improved customer onboarding and reduced processing time significantly.",
+    achievement: "72% Faster Onboarding",
+    tags: ["Digital Transformation", "Banking", "Process Optimization"],
+    href: "/case-studies/deutsche-bank",
+    category: "Fintech",
+  },
+];
+
+const categories = ["All", "E-Commerce", "Fintech", "Retail"];
+
 export default function ProjectsPage() {
-  const projects = [
-    {
-      title: "idealo",
-      description:
-        "API Integration & Partner Onboarding — coordinated technical integration and partner rollout for one of Europe's leading price comparison platforms.",
-      achievement: "Successful Rollout",
-      tags: ["API Integration", "Project Management", "Partner Coordination"],
-      href: "/case-studies/idealo",
-    },
-    {
-      title: "Zalando",
-      description:
-        "Marketing & Campaign Operations across 15 European markets — managed seven-figure budgets and coordinated international teams.",
-      achievement: "€2M+ Budgets Managed",
-      tags: ["Campaign Ops", "Stakeholder Mgmt", "International Teams"],
-      href: "/case-studies/zalando",
-    },
-    {
-      title: "Google & Apple",
-      description:
-        "Digital Gift Card Platform & Integrations — led product strategy and B2B partnerships for multi-platform launch.",
-      achievement: "Multi-Platform Launch",
-      tags: ["Product Strategy", "B2B Partnerships", "Scale-up"],
-      href: "/case-studies/google-aldi",
-    },
-    {
-      title: "Deutsche Bank",
-      description:
-        "Digital transformation initiatives for retail banking products — improved customer onboarding and reduced processing time significantly.",
-      achievement: "72% Faster Onboarding",
-      tags: ["Digital Transformation", "Banking", "Process Optimization"],
-      href: "/case-studies/deutsche-bank",
-    },
-  ];
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredProjects =
+    activeCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
   return (
     <div>
@@ -74,11 +90,34 @@ export default function ProjectsPage() {
           </div>
         </section>
 
+        {/* Filter */}
+        <section className="px-6 md:px-8 py-8 border-b border-border">
+          <div className="max-w-wide mx-auto">
+            <FadeIn>
+              <div className="flex flex-wrap gap-3">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`px-4 py-2 text-body-small font-medium transition-colors ${
+                      activeCategory === category
+                        ? "bg-accent text-background"
+                        : "border border-border hover:border-accent"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* Projects Grid */}
         <section className="px-6 md:px-8 py-section">
           <div className="max-w-wide mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {projects.map((project, index) => (
+              {filteredProjects.map((project, index) => (
                 <FadeIn key={project.title} delay={0.1 * (index + 1)}>
                   <ProjectCard
                     title={project.title}
@@ -90,6 +129,12 @@ export default function ProjectsPage() {
                 </FadeIn>
               ))}
             </div>
+
+            {filteredProjects.length === 0 && (
+              <p className="text-center text-muted py-12">
+                No projects found in this category.
+              </p>
+            )}
           </div>
         </section>
 
