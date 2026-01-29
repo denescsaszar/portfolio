@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://denescsaszar.com"),
   title: "Denes Csaszar | Product & Project Manager",
   description:
     "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
