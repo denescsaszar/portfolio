@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
 
 export default function Navigation() {
@@ -32,40 +33,40 @@ export default function Navigation() {
     >
       <div className="max-w-wide mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="text-heading-2 font-bold no-underline"
           aria-label="Denes Csaszar - Home"
         >
           DC
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a
+          <Link
             href="/projects"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Work
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#challenges"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Thinking
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#about"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="text-body-small font-medium text-muted hover:text-foreground transition-colors no-underline"
           >
             Contact
-          </a>
+          </Link>
           <button
             onClick={toggleTheme}
             className="p-2 text-muted hover:text-foreground transition-colors"
@@ -154,7 +155,7 @@ export default function Navigation() {
       {/* Mobile Menu Backdrop */}
       {isOpen && (
         <div
-          className="md:hidden fixed inset-0 top-[57px] bg-background/80 backdrop-blur-sm z-40"
+          className="md:hidden fixed inset-0 top-14 bg-background/80 backdrop-blur-sm z-40"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
         />
@@ -163,7 +164,7 @@ export default function Navigation() {
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden fixed top-[57px] left-0 right-0 bg-background border-b border-border z-50 transition-all duration-300 ${
+        className={`md:hidden fixed top-14 left-0 right-0 bg-background border-b border-border z-50 transition-all duration-300 ${
           isOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-4 pointer-events-none"
@@ -171,38 +172,38 @@ export default function Navigation() {
         role="menu"
       >
         <div className="flex flex-col p-6 gap-6">
-          <a
+          <Link
             href="/projects"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             Work
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#challenges"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             Thinking
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#about"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="text-body-large font-medium no-underline py-2"
             onClick={() => setIsOpen(false)}
             role="menuitem"
           >
             Contact
-          </a>
+          </Link>
           <button
             onClick={() => {
               toggleTheme();
