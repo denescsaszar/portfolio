@@ -93,3 +93,14 @@ button,
     padding-bottom: var(--spacing-section-mobile);
   }
 }
+
+/* Selection color styling */
+::selection {
+  background-color: var(--color-coral);
+  color: var(--color-background);
+}
+
+::-moz-selection {
+  background-color: var(--color-coral);
+  color: var(--color-background);
+}
