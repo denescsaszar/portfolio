@@ -6,6 +6,9 @@ import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 
+// Note: Metadata can't be exported from client components
+// We'll add it via a separate layout file instead
+
 const projects = [
   {
     title: "idealo",
