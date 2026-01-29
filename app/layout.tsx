@@ -51,8 +51,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Denes Csaszar",
+    url: "https://denescsaszar.com",
+    jobTitle: "Product & Project Manager",
+    description:
+      "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Berlin",
+      addressCountry: "Germany",
+    },
+    sameAs: [
+      "https://linkedin.com/in/denescsaszar",
+      "https://github.com/denescsaszar",
+    ],
+    knowsAbout: [
+      "Product Management",
+      "Project Management",
+      "API Integration",
+      "E-Commerce",
+      "Digital Transformation",
+      "Agile",
+      "Scrum",
+    ],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
