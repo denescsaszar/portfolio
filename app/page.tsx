@@ -143,36 +143,32 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ChallengeCard
-                  title="API Pagination Strategy"
-                  problem="Large result sets caused slow client-side rendering and complex state handling in the frontend."
-                  approach="Compared offset-based and cursor-based pagination across performance, caching behavior, API complexity and frontend UX."
-                  outcome="Cursor-based pagination reduced response time and simplified frontend logic while scaling more reliably."
-                  tags={["API Design", "Performance", "Trade-offs"]}
-                  href="https://github.com/denescsaszar"
+                  title="ShopForge E-Commerce API"
+                  problem="Building a production-grade backend that handles authentication, inventory, orders, and payments requires careful architecture decisions."
+                  approach="Designed a modular REST API with JWT/OAuth2 auth, RBAC permissions, Redis caching, and PostgreSQL. Implemented Docker containerization and CI/CD pipelines."
+                  outcome="Full-featured e-commerce backend with scalable architecture, comprehensive test coverage, and production-ready DevOps infrastructure."
+                  tags={["Node.js", "TypeScript", "PostgreSQL", "Redis"]}
+                  href="https://github.com/denescsaszar/shopforge"
                 />
               </FadeIn>
               <FadeIn delay={0.2}>
                 <ChallengeCard
-                  title="Real-Time Sync Architecture"
-                  problem="Multiple users editing data simultaneously led to race conditions and stale state issues across clients."
-                  approach="Evaluated WebSocket, Server-Sent Events, and polling. Analyzed latency requirements, server load, and client complexity."
-                  outcome="WebSocket with event sourcing eliminated race conditions and reduced latency by 400ms while keeping architecture maintainable."
-                  tags={["Real-Time Systems", "Architecture", "Scalability"]}
-                  href="https://github.com/denescsaszar"
+                  title="Stock Price API"
+                  problem="Fetching real-time financial data efficiently while minimizing external API calls and ensuring data persistence."
+                  approach="Built a FastAPI backend with SQLAlchemy ORM, implemented Redis caching to reduce redundant calls, and added Alembic migrations for schema management."
+                  outcome="Production-ready API with async patterns, comprehensive Pytest coverage, and Docker deployment — demonstrating modern Python backend practices."
+                  tags={["Python", "FastAPI", "SQLAlchemy", "Docker"]}
+                  href="https://github.com/denescsaszar/stock-price-api-challenge"
                 />
               </FadeIn>
               <FadeIn delay={0.3}>
                 <ChallengeCard
-                  title="Multi-Region Data Consistency"
-                  problem="Operating across 15 European markets required managing data consistency with varying network latency and regulatory constraints."
-                  approach="Designed eventual consistency model with conflict resolution, local caching strategies, and GDPR-compliant data governance."
-                  outcome="Reduced data sync latency to under 2 seconds globally while maintaining compliance across all regions."
-                  tags={[
-                    "Distributed Systems",
-                    "Data Consistency",
-                    "Compliance",
-                  ]}
-                  href="https://github.com/denescsaszar"
+                  title="Supplier Intelligence Dashboard"
+                  problem="Manual supplier evaluation takes 2-3 days per vendor, with data scattered across emails, spreadsheets, and ERPs."
+                  approach="Built a B2B procurement dashboard with AI-simulated insights, color-coded risk indicators, performance visualizations, and responsive design using SvelteKit."
+                  outcome="Streamlined supplier evaluation with real-time metrics, proactive alerts, and data export — reducing evaluation time from days to minutes."
+                  tags={["SvelteKit", "TypeScript", "Tailwind", "Chart.js"]}
+                  href="https://github.com/denescsaszar/pm-challenge-supplier-intelligence"
                 />
               </FadeIn>
             </div>
