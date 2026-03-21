@@ -268,7 +268,7 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6">Let's Talk</h2>
 
                 <p className="text-body leading-relaxed mb-8">
-                  Open to Software Engineer and Product Manager roles. Berlin-based, remote-friendly.
+                  Open to Software Engineer and Product Manager roles. Berlin &amp; Z&uuml;rich based, remote-friendly.
                 </p>
 
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
@@ -327,7 +327,7 @@ export default function Home() {
                     <p className="text-muted uppercase tracking-wide mb-1">
                       Location
                     </p>
-                    <p>Berlin, Germany · EU Remote</p>
+                    <p>Berlin &amp; Z&uuml;rich · EU Remote</p>
                   </div>
                 </div>
               </FadeIn>
