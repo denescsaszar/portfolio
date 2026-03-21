@@ -28,15 +28,15 @@ export default function Home() {
               <h1 className="text-display-large font-bold mb-6 leading-[1.1]">
                 <span className="text-coral">Denes Csaszar</span>
                 <br />
-                Where product, tech
+                Where product thinking
                 <br />
-                and business meet.
+                meets real code.
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-body-large text-muted mb-8 md:mb-12 max-w-[48ch]">
-                7+ years bridging technical execution and business strategy across digital products in 15 European markets & DACH.
+                7+ years in e-commerce and integrations. Now building full-stack apps.
               </p>
             </FadeIn>
 
