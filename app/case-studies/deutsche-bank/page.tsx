@@ -6,91 +6,101 @@ export default function DeutscheBankCaseStudy() {
   return (
     <CaseStudyLayout
       title="Deutsche Bank"
-      subtitle="Managed digital transformation initiatives for retail banking products, improving customer onboarding and reducing processing time."
-      role="Project Manager"
-      timeline="2019 - 2021"
-      industry="Financial Services"
+      subtitle="Supported Deutsche Bank in introducing digital gift cards on their platform, with Zalando integrated as an essential partner."
+      role="Product Manager"
+      timeline="2016 - 2017"
+      industry="Financial Services / E-Commerce"
     >
       <CaseStudySection title="Overview">
         <p>
-          Deutsche Bank was modernizing their retail banking digital experience
-          to compete with neo-banks and improve customer satisfaction. The
-          initiative focused on streamlining account opening, loan applications,
-          and customer service workflows.
-        </p>
-        <p>
-          I joined as Project Manager to coordinate cross-functional teams,
-          manage vendor relationships, and ensure timely delivery of digital
-          banking features across web and mobile platforms.
+          Deutsche Bank wanted to introduce digital gift cards on their
+          platform. Zalando was integrated as an essential partner to enhance
+          the offering&apos;s attractiveness. I coordinated the project from
+          Zalando&apos;s side, working closely with the Deutsche Bank project
+          manager to define requirements and drive product development.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Challenge">
         <p>
-          Legacy systems posed significant integration challenges. The existing
-          infrastructure was built on decades-old technology, making it
-          difficult to implement modern user experiences without extensive
-          backend modifications.
+          Integrating two large organizations with different technical
+          architectures, internal processes, and timelines required careful
+          coordination. The API integration between Deutsche Bank and
+          Zalando&apos;s IT team needed to be seamless for the end customer while
+          meeting both companies&apos; security and compliance requirements.
         </p>
         <p>
-          Regulatory compliance added complexity — every feature required
-          approval from legal, risk, and compliance teams across multiple
-          jurisdictions. This created bottlenecks that threatened project
-          timelines.
+          Internally at Zalando, the project required alignment across IT,
+          Product Management, and Marketing teams, each with their own
+          priorities and roadmaps.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Approach">
         <p>
-          I established a governance framework that brought compliance teams
-          into the process earlier, shifting from approval gates to continuous
-          collaboration. This reduced review cycles from weeks to days.
+          I collaborated closely with the Deutsche Bank project manager to
+          define requirements and align on the technical approach. Together we
+          established a shared roadmap and regular sync points to keep both
+          sides on track.
         </p>
         <p>
-          For technical integration, I worked with architects to design an API
-          layer that abstracted legacy systems, allowing frontend teams to build
-          modern experiences without direct dependencies on old infrastructure.
+          On Zalando&apos;s side, I coordinated the API integration with our IT
+          team, ensuring the technical implementation met Deutsche Bank&apos;s
+          specifications while fitting into Zalando&apos;s existing gift card
+          infrastructure.
         </p>
         <p>
-          We adopted an agile methodology with two-week sprints, daily standups,
-          and bi-weekly stakeholder demos. This visibility helped manage
-          expectations and surface blockers early.
+          I managed internal coordination processes between Zalando teams and
+          external partners, making sure all stakeholders were aligned on
+          requirements, timelines, and deliverables.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Solution">
         <p>
-          The new digital onboarding flow reduced account opening from 5 days to
-          under 10 minutes for eligible customers. We implemented real-time ID
-          verification, automated credit checks, and e-signature capabilities.
+          The API integration connected Deutsche Bank&apos;s platform with
+          Zalando&apos;s gift card system, enabling Deutsche Bank customers to
+          purchase and redeem Zalando digital gift cards directly through
+          the bank&apos;s platform.
         </p>
         <p>
-          A unified customer dashboard gave users visibility into all their
-          products — accounts, loans, investments — with self-service options
-          that previously required branch visits or phone calls.
+          The implementation was designed for a seamless customer experience,
+          with the technical complexity handled behind the scenes through
+          well-defined API contracts between both organizations.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Results">
-        <p>The digital transformation delivered measurable business impact:</p>
+        <p>The project delivered a successful partnership:</p>
         <ul className="list-disc list-inside space-y-2 mt-4">
-          <li>72% reduction in account opening time</li>
-          <li>34% increase in digital-first customer acquisition</li>
-          <li>28% decrease in call center volume for routine inquiries</li>
-          <li>NPS improvement from 32 to 51 within 12 months</li>
+          <li>
+            Successful launch of digital gift cards on the Deutsche Bank
+            platform
+          </li>
+          <li>
+            Seamless API integration between Deutsche Bank and Zalando systems
+          </li>
+          <li>
+            Strengthened the strategic partnership between both companies
+          </li>
+          <li>
+            Customers gained a seamless digital gift card purchase experience
+          </li>
         </ul>
       </CaseStudySection>
 
       <CaseStudySection title="Key Learnings">
         <p>
-          Working in a heavily regulated environment taught me the importance of
-          treating compliance as a partner, not a gatekeeper. Early involvement
-          and clear communication transformed potential blockers into enablers.
+          This project taught me how to manage cross-company integrations where
+          you don&apos;t control both sides. Clear communication, shared
+          documentation, and regular alignment between project managers on
+          both sides were essential.
         </p>
         <p>
-          I also learned that legacy modernization is as much about people and
-          processes as it is about technology. Change management and stakeholder
-          alignment were critical success factors.
+          I also learned the importance of managing internal stakeholders just
+          as carefully as external ones. Getting buy-in from IT, Product, and
+          Marketing teams at Zalando required understanding each team&apos;s
+          priorities and framing the project in terms they cared about.
         </p>
       </CaseStudySection>
 
