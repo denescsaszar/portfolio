@@ -212,7 +212,7 @@ export default function Navigation() {
             className="text-body-large font-medium text-left py-2"
             role="menuitem"
           >
-            {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            {theme === "dark" ? "Light Mode" : "Dark Mode"}
           </button>
         </div>
       </div>

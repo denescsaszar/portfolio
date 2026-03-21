@@ -20,7 +20,7 @@ export default function Home() {
           <div className="w-full mt-12 md:mt-20">
             <FadeIn>
               <p className="text-body-small uppercase tracking-widest text-muted mb-4">
-                Product & Project Manager
+                Software Engineer & Product Manager
               </p>
             </FadeIn>
 
@@ -36,8 +36,7 @@ export default function Home() {
 
             <FadeIn delay={0.2}>
               <p className="text-body-large text-muted mb-8 md:mb-12 max-w-[48ch]">
-                7+ years bridging technical execution and business strategy
-                across digital products in DACH & 15 European markets.
+                7+ years bridging technical execution and business strategy across digital products in 15 European markets & DACH.
               </p>
             </FadeIn>
 
@@ -76,8 +75,7 @@ export default function Home() {
               <div className="mb-8 md:mb-12">
                 <h2 className="text-heading-1 font-bold mb-4">Selected Work</h2>
                 <p className="text-body-large text-muted max-w-[36ch]">
-                  Product leadership across digital products, API integrations,
-                  and e-commerce solutions.
+                  Real projects. Real outcomes. Here&apos;s what I&apos;ve shipped.
                 </p>
               </div>
             </FadeIn>
@@ -86,12 +84,12 @@ export default function Home() {
               <FadeIn delay={0.1}>
                 <ProjectCard
                   title="idealo"
-                  description="API Integration & Partner Onboarding — coordinated technical integration and partner rollout for one of Europe's leading price comparison platforms."
-                  achievement="Successful Rollout"
+                  description="Onboarded 350+ merchants via API integrations. Doubled the partner portfolio and tripled revenue."
+                  achievement="3x Revenue Growth"
                   tags={[
                     "API Integration",
-                    "Project Management",
-                    "Partner Coordination",
+                    "Data Feeds",
+                    "Partner Onboarding",
                   ]}
                   href="/case-studies/idealo"
                 />
@@ -99,12 +97,12 @@ export default function Home() {
               <FadeIn delay={0.2}>
                 <ProjectCard
                   title="Zalando"
-                  description="Marketing & Campaign Operations across 15 European markets — managed seven-figure budgets and coordinated international teams."
-                  achievement="€2M+ Budgets Managed"
+                  description="Launched gift cards across 15 European markets. 50K+ POS rollout, +20% revenue growth from redesign."
+                  achievement="+20% Revenue Growth"
                   tags={[
-                    "Campaign Ops",
-                    "Stakeholder Mgmt",
-                    "International Teams",
+                    "Product Launch",
+                    "15 Markets",
+                    "API Development",
                   ]}
                   href="/case-studies/zalando"
                 />
@@ -112,9 +110,9 @@ export default function Home() {
               <FadeIn delay={0.3}>
                 <ProjectCard
                   title="Google & Apple"
-                  description="Digital Gift Card Platform & Integrations — led product strategy and B2B partnerships for multi-platform launch."
-                  achievement="Multi-Platform Launch"
-                  tags={["Product Strategy", "B2B Partnerships", "Scale-up"]}
+                  description="Rolled out digital gift cards across ALDI DACH with Google and Apple. POS integration, API coordination, multi-country launch."
+                  achievement="DACH-wide Launch"
+                  tags={["POS Integration", "Apple & Google", "ALDI DACH"]}
                   href="/case-studies/google-aldi"
                 />
               </FadeIn>
@@ -134,8 +132,7 @@ export default function Home() {
                   Challenges & Experiments
                 </h2>
                 <p className="text-body-large text-muted max-w-[44ch]">
-                  Small problems, clearly framed. This section shows how I think
-                  about product, systems and trade-offs.
+                  Side projects I built to learn new stacks and solve real problems.
                 </p>
               </div>
             </FadeIn>
@@ -143,32 +140,32 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ChallengeCard
-                  title="ShopForge E-Commerce API"
-                  problem="Building a production-grade backend that handles authentication, inventory, orders, and payments requires careful architecture decisions."
-                  approach="Designed a modular REST API with JWT/OAuth2 auth, RBAC permissions, Redis caching, and PostgreSQL. Implemented Docker containerization and CI/CD pipelines."
-                  outcome="Full-featured e-commerce backend with scalable architecture, comprehensive test coverage, and production-ready DevOps infrastructure."
-                  tags={["Node.js", "TypeScript", "PostgreSQL", "Redis"]}
-                  href="https://github.com/denescsaszar/shopforge"
+                  title="AI Travel Concierge"
+                  problem="Travelers browse endless lists instead of describing what they actually want."
+                  approach="Built a full-stack app with Kotlin/Spring Boot backend and Vue 3/TypeScript frontend. Integrated Claude API so users can chat naturally and get personalized Berlin activity recommendations."
+                  outcome="Live and deployed. Try it yourself."
+                  tags={["Kotlin", "Spring Boot", "Vue 3", "Claude API"]}
+                  href="https://gyg-ai-concierge.vercel.app"
                 />
               </FadeIn>
               <FadeIn delay={0.2}>
                 <ChallengeCard
-                  title="Stock Price API"
-                  problem="Fetching real-time financial data efficiently while minimizing external API calls and ensuring data persistence."
-                  approach="Built a FastAPI backend with SQLAlchemy ORM, implemented Redis caching to reduce redundant calls, and added Alembic migrations for schema management."
-                  outcome="Production-ready API with async patterns, comprehensive Pytest coverage, and Docker deployment — demonstrating modern Python backend practices."
-                  tags={["Python", "FastAPI", "SQLAlchemy", "Docker"]}
-                  href="https://github.com/denescsaszar/stock-price-api-challenge"
+                  title="StockPulse API"
+                  problem="Needed a way to fetch, cache, and store stock prices without hammering external APIs."
+                  approach="FastAPI with SQLAlchemy, 5-minute TTL cache, pagination, date filtering. Wrote 4 test suites covering CRUD, endpoints, services, and integration."
+                  outcome="Clean layered architecture with real tests. The kind of backend code I want to write professionally."
+                  tags={["Python", "FastAPI", "SQLAlchemy", "pytest"]}
+                  href="https://github.com/denescsaszar/stockpulse-api"
                 />
               </FadeIn>
               <FadeIn delay={0.3}>
                 <ChallengeCard
-                  title="Supplier Intelligence Dashboard"
-                  problem="Manual supplier evaluation takes 2-3 days per vendor, with data scattered across emails, spreadsheets, and ERPs."
-                  approach="Built a B2B procurement dashboard with AI-simulated insights, color-coded risk indicators, performance visualizations, and responsive design using SvelteKit."
-                  outcome="Streamlined supplier evaluation with real-time metrics, proactive alerts, and data export — reducing evaluation time from days to minutes."
-                  tags={["SvelteKit", "TypeScript", "Tailwind", "Chart.js"]}
-                  href="https://github.com/denescsaszar/pm-challenge-supplier-intelligence"
+                  title="Stripe API Portfolio"
+                  problem="Wanted to deeply understand payment flows. Not just use them, but implement them from scratch."
+                  approach="Built 20 real-world Stripe scenarios in Python: charges, refunds, disputes, subscriptions, webhooks, fraud rules, and billing."
+                  outcome="Hands-on understanding of how payment systems work under the hood."
+                  tags={["Python", "Stripe API", "Webhooks", "Flask"]}
+                  href="https://github.com/denescsaszar/stripe-api-portfolio"
                 />
               </FadeIn>
             </div>
@@ -186,24 +183,15 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6 md:mb-8">About</h2>
 
                 <p className="text-body leading-relaxed mb-6">
-                  Project Manager bridging technical execution and business
-                  strategy. With 7+ years of experience managing digital
-                  products across Europe, I've built a rare combination of deep
-                  product thinking and technical literacy.
+                  I spent 8 years managing products and integrations at Zalando, idealo, and InComm. Shipped across 15 markets, worked with Apple, Google, and ALDI, and learned what makes software projects succeed (and fail).
                 </p>
 
                 <p className="text-body leading-relaxed mb-6">
-                  I've led cross-functional teams, managed seven-figure budgets,
-                  and shipped products that generated measurable business
-                  impact. My background spans e-commerce, API integrations, and
-                  international product launches.
+                  Then I went back to school. Did a full-stack bootcamp, started building things myself. Kotlin, Spring Boot, Python, Vue, React. Turns out I like writing code as much as I liked managing the people who write it.
                 </p>
 
                 <p className="text-body leading-relaxed mb-8 md:mb-12">
-                  Now I combine that product expertise with full-stack
-                  development skills (JavaScript, React, Next.js, Python) and
-                  Scrum certifications to bridge the gap between business needs
-                  and technical execution.
+                  Now I&apos;m looking for engineering roles where my product background is an asset, not a footnote. I understand why we build, not just how.
                 </p>
               </FadeIn>
 
@@ -214,16 +202,21 @@ export default function Home() {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
                   {[
-                    "Product Strategy",
-                    "Project Management",
-                    "API Integration",
-                    "Agile / Scrum",
                     "JavaScript",
                     "React",
                     "Next.js",
-                    "Python",
+                    "Node.js",
+                    "HTML/CSS",
                     "SQL",
-                    "Figma",
+                    "Git",
+                    "REST APIs",
+                    "Agile / Scrum (PSM I + PSPO I)",
+                    "Stakeholder Management",
+                    "API Integration",
+                    "Product Strategy",
+                    "Requirements Engineering",
+                    "Cross-functional Collaboration",
+                    "Market Research",
                   ].map((skill) => (
                     <div
                       key={skill}
@@ -249,8 +242,7 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6">Let's Talk</h2>
 
                 <p className="text-body leading-relaxed mb-8">
-                  Open to Product Manager and Project Manager roles across
-                  Europe. Berlin-based, remote-friendly.
+                  Open to Software Engineer and Product Manager roles. Berlin-based, remote-friendly.
                 </p>
 
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">

@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
-
-// Note: Metadata can't be exported from client components
-// We'll add it via a separate layout file instead
 
 const projects = [
   {
@@ -149,15 +147,15 @@ export default function ProjectsPage() {
                 Interested in working together?
               </h2>
               <p className="text-body-large text-muted mb-8 max-w-[44ch] mx-auto">
-                I'm open to Product Manager and Project Manager roles across
+                I&apos;m open to Product Manager and Project Manager roles across
                 Europe.
               </p>
-              <a
+              <Link
                 href="/#contact"
                 className="inline-block px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
               >
                 Get in Touch
-              </a>
+              </Link>
             </FadeIn>
           </div>
         </section>

@@ -12,16 +12,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://denescsaszar.com"),
-  title: "Denes Csaszar | Product & Project Manager",
+  title: "Denes Csaszar | Software Engineer & Product Manager",
   description:
-    "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
+    "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python. 8 years of e-commerce and API integrations across DACH.",
   keywords: [
+    "Software Engineer",
     "Product Manager",
-    "Project Manager",
     "Berlin",
-    "E-Commerce",
-    "API Integration",
-    "Digital Transformation",
+    "Kotlin",
+    "Spring Boot",
+    "TypeScript",
+    "Python",
+    "Full-Stack",
   ],
   authors: [{ name: "Denes Csaszar" }],
   creator: "Denes Csaszar",
@@ -30,23 +32,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://denescsaszar.com",
     siteName: "Denes Csaszar",
-    title: "Denes Csaszar | Product & Project Manager",
+    title: "Denes Csaszar | Software Engineer & Product Manager",
     description:
-      "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
+      "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Denes Csaszar - Product & Project Manager",
+        alt: "Denes Csaszar - Software Engineer & Product Manager",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Denes Csaszar | Product & Project Manager",
+    title: "Denes Csaszar | Software Engineer & Product Manager",
     description:
-      "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
+      "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -65,7 +67,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Denes Csaszar",
     url: "https://denescsaszar.com",
-    jobTitle: "Product & Project Manager",
+    jobTitle: "Software Engineer & Product Manager",
     description:
       "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
     address: {
