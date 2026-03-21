@@ -217,7 +217,7 @@ export default function Home() {
                 </p>
 
                 <p className="text-body leading-relaxed mb-8 md:mb-12">
-                  Now I&apos;m looking for engineering roles where my product background is an asset, not a footnote. I understand why we build, not just how.
+                  Now I&apos;m looking for roles close to code — engineering, technical product management, or integration projects — where my product background is an asset, not a footnote.
                 </p>
               </FadeIn>
 
