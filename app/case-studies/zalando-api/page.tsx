@@ -104,6 +104,16 @@ export default function ZalandoApiCaseStudy() {
           alignment processes. Getting all stakeholders on the same page early
           was critical to the project&apos;s success.
         </p>
+        <p className="mt-6">
+          <a
+            href="https://engineering.zalando.com/posts/2018/04/improving-efficiency-offline-campaigns.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-coral hover:text-foreground transition-colors"
+          >
+            Further project information on the Zalando Engineering Blog &rarr;
+          </a>
+        </p>
       </CaseStudySection>
 
       <CaseStudyNav
