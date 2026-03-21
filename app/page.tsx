@@ -80,7 +80,7 @@ export default function Home() {
               </div>
             </FadeIn>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               <FadeIn delay={0.1}>
                 <ProjectCard
                   title="idealo"
@@ -114,6 +114,19 @@ export default function Home() {
                   achievement="DACH-wide Launch"
                   tags={["POS Integration", "Apple & Google", "ALDI DACH"]}
                   href="/case-studies/google-aldi"
+                />
+              </FadeIn>
+              <FadeIn delay={0.4}>
+                <ProjectCard
+                  title="Zalando Gift Card API"
+                  description="Coordinated development of a new gift card API with Zalando IT. Design thinking, feasibility study, end-to-end implementation across sales channels."
+                  achievement="Multi-Platform API"
+                  tags={[
+                    "API Development",
+                    "Design Thinking",
+                    "Feasibility Study",
+                  ]}
+                  href="/case-studies/zalando-api"
                 />
               </FadeIn>
             </div>
