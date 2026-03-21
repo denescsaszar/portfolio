@@ -209,7 +209,7 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6 md:mb-8">About</h2>
 
                 <p className="text-body leading-relaxed mb-6">
-                  I spent 8 years managing products and integrations at Zalando, idealo, and InComm. Shipped across 15 markets, worked with Apple, Google, and ALDI, and learned what makes software projects succeed (and fail).
+                  I spent 7+ years managing products and integrations at Zalando, idealo, and InComm. Shipped across 15 markets, worked with Apple, Google, and ALDI, and learned what makes software projects succeed (and fail).
                 </p>
 
                 <p className="text-body leading-relaxed mb-6">
@@ -273,7 +273,7 @@ export default function Home() {
 
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
                   <a
-                    href="mailto:hello@denescsaszar.com"
+                    href="mailto:csaszar.denes@gmail.com"
                     className="px-5 md:px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
                   >
                     Send Email
@@ -304,7 +304,7 @@ export default function Home() {
                       Email
                     </p>
                     <a
-                      href="mailto:hello@denescsaszar.com"
+                      href="mailto:csaszar.denes@gmail.com"
                       className="hover:text-muted transition-colors no-underline"
                     >
                       csaszar.denes@gmail.com
