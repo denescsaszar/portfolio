@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://denescsaszar.com"),
   title: "Denes Csaszar | Software Engineer & Product Manager",
   description:
-    "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python. 8 years of e-commerce and API integrations across DACH.",
+    "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery. Berlin & Z\u00fcrich based.",
   keywords: [
     "Software Engineer",
     "Product Manager",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Denes Csaszar",
     title: "Denes Csaszar | Software Engineer & Product Manager",
     description:
-      "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python.",
+      "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
     images: [
       {
         url: "/og-image.png",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Denes Csaszar | Software Engineer & Product Manager",
     description:
-      "Software engineer with product background. Full-stack apps in Kotlin, Spring Boot, Vue, TypeScript, Python.",
+      "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
     images: ["/og-image.png"],
   },
   robots: {
