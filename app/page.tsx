@@ -16,7 +16,7 @@ export default function Home() {
       <Navigation />
       <main id="main-content">
         {/* Hero */}
-        <section className="min-h-screen flex items-start px-6 md:px-8 pt-24 pb-16 md:pb-24 max-w-wide mx-auto">
+        <section className="md:min-h-screen flex items-start px-6 md:px-8 pt-24 pb-16 md:pb-24 max-w-wide mx-auto">
           <div className="w-full mt-12 md:mt-20">
             <FadeIn>
               <p className="text-body-small tracking-wide text-muted mb-4">
