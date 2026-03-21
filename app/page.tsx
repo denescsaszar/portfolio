@@ -187,7 +187,7 @@ export default function Home() {
                 </p>
 
                 <p className="text-body leading-relaxed mb-6">
-                  Then I went back to school. Did a full-stack bootcamp, started building things myself. Kotlin, Spring Boot, Python, Vue, React. Turns out I like writing code as much as I liked managing the people who write it.
+                  Then I went back to school. Did a full-stack bootcamp at SPICED Academy. JavaScript, React, Node.js, Express, SQL. Started building things myself. Turns out I like writing code as much as I liked managing the people who write it.
                 </p>
 
                 <p className="text-body leading-relaxed mb-8 md:mb-12">
