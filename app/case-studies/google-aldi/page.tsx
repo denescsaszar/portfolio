@@ -6,98 +6,103 @@ export default function GoogleAldiCaseStudy() {
   return (
     <CaseStudyLayout
       title="Google & Apple Gift Cards"
-      subtitle="Led product strategy and B2B partnerships for a multi-platform digital gift card launch with Aldi, scaling to millions of transactions."
-      role="Product Manager"
-      timeline="2021 - 2022"
+      subtitle="Managed the introduction of an innovative digital gift card format across ALDI Nord, S&uuml;d, ALDI Suisse, and Hofer, working directly with Google's Operations Manager in Mountain View."
+      role="Product Manager, DACH Market at InComm"
+      timeline="Jun 2017 - Sep 2020"
       industry="E-Commerce / Retail"
     >
       <CaseStudySection title="Overview">
         <p>
-          Aldi sought to expand their digital product offerings by introducing
-          Google Play and Apple App Store gift cards across their European
-          retail network. This required building a scalable digital
-          infrastructure, negotiating B2B partnerships, and coordinating a
-          multi-market rollout.
+          At InComm, I managed international integration projects with Apple,
+          Google, Amazon, and Microsoft. The flagship project was introducing a
+          worldwide new digital gift card format across ALDI and Hofer stores in
+          the DACH region. Customers receive a PIN directly printed on the cash
+          register receipt, eliminating the need for physical gift cards.
         </p>
         <p>
-          As Product Manager, I owned the end-to-end delivery — from initial
-          scoping and partner negotiations through technical integration and
-          go-to-market execution.
+          Online sales of digital gift cards were additionally introduced in
+          Switzerland. This format set new standards in retail globally.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Challenge">
         <p>
-          The core challenge was threefold: integrating with Google and Apple's
-          complex gift card APIs, building a redemption system that could handle
-          peak retail traffic, and coordinating launches across multiple
-          European markets with different regulatory requirements.
+          This was a completely new format that had never been done before. It
+          required linking cash register systems with backend infrastructure
+          across multiple retailers (ALDI Nord, ALDI S&uuml;d, ALDI Suisse, Hofer)
+          in different countries, each with their own POS systems and technical
+          requirements.
         </p>
         <p>
-          Additionally, Aldi's existing POS systems had limited digital product
-          support, requiring custom integration work while maintaining their
-          strict cost efficiency standards.
+          Coordinating between Google&apos;s team in Mountain View and local retail
+          operations in Germany, Austria, and Switzerland added complexity in
+          terms of time zones, communication, and aligning on technical
+          specifications.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Approach">
         <p>
-          I started by mapping the technical landscape — understanding the API
-          requirements from both Google and Apple, identifying gaps in Aldi's
-          current infrastructure, and scoping the integration effort.
+          I collaborated closely with Google&apos;s Operations Manager in Mountain
+          View using an agile approach to develop the technical concept for
+          the new digital format. Regular syncs ensured both sides stayed
+          aligned on requirements and timelines.
         </p>
         <p>
-          Working closely with engineering, I prioritized a phased rollout:
-          Germany first as a pilot market, followed by Austria and Switzerland.
-          This allowed us to validate the technical integration and refine
-          operational processes before scaling.
+          I managed the end-to-end project implementation, including API
+          integration and linking cash register systems with backend
+          infrastructure for Google, ALDI, ALDI Suisse, and Hofer.
         </p>
         <p>
-          For the B2B partnerships, I led negotiations with both Google and
-          Apple, aligning on commercial terms, technical SLAs, and marketing
-          support. I also coordinated with Aldi's legal and compliance teams to
-          ensure GDPR compliance across all markets.
-        </p>
-      </CaseStudySection>
-
-      <CaseStudySection title="Solution">
-        <p>
-          We built a lightweight middleware layer that connected Aldi's POS
-          systems to Google and Apple's gift card APIs. This abstraction allowed
-          us to handle the complexity of both platforms while presenting a
-          unified interface to the retail systems.
-        </p>
-        <p>
-          The system included real-time inventory management, automated
-          reconciliation, and a monitoring dashboard for operations teams. We
-          also implemented circuit breakers and fallback mechanisms to ensure
-          reliability during peak shopping periods.
+          I coordinated with internal and external stakeholders to ensure
+          technical and organizational requirements were met, and conducted
+          tests and quality controls to guarantee a smooth customer experience
+          before launch.
         </p>
       </CaseStudySection>
 
       <CaseStudySection title="Results">
         <p>
-          The platform launched successfully across DACH markets, processing
-          over 2 million transactions in the first year. Key outcomes included:
+          The project delivered a globally unique format:
         </p>
         <ul className="list-disc list-inside space-y-2 mt-4">
-          <li>99.7% uptime during Black Friday and Christmas peaks</li>
-          <li>45% reduction in settlement time vs. industry average</li>
-          <li>Expanded to 3 additional European markets within 6 months</li>
-          <li>Established framework for future digital product integrations</li>
+          <li>
+            Successful market launch across ALDI Nord, ALDI S&uuml;d, ALDI Suisse,
+            and Hofer
+          </li>
+          <li>
+            Worldwide first: PIN printed directly on cash register receipt
+          </li>
+          <li>
+            Additional online sales channel launched in Switzerland
+          </li>
+          <li>
+            Set new standards in digital retail for gift card distribution
+          </li>
         </ul>
+      </CaseStudySection>
+
+      <CaseStudySection title="Other Projects at InComm">
+        <p>
+          Beyond the Google/ALDI project, I also rolled out gift card programs
+          across Swiss Rail, PaySafe, and other platforms, and managed
+          integration projects with Apple, Amazon, and Microsoft across the
+          DACH market.
+        </p>
       </CaseStudySection>
 
       <CaseStudySection title="Key Learnings">
         <p>
-          This project reinforced the importance of phased rollouts when dealing
-          with complex integrations. Starting with a single market allowed us to
-          identify edge cases and optimize processes before scaling.
+          Working directly with Google&apos;s team in Mountain View taught me how
+          to manage cross-company, cross-timezone projects where agile
+          collaboration and clear documentation are essential.
         </p>
         <p>
-          I also learned the value of building strong relationships with
-          external partners. Regular syncs with Google and Apple technical teams
-          helped us anticipate API changes and resolve issues quickly.
+          Launching a format that had never existed before meant there was no
+          playbook. We had to figure out the technical approach, test
+          extensively, and coordinate across multiple retailers simultaneously.
+          That experience gave me confidence in managing ambiguity and complex
+          technical projects.
         </p>
       </CaseStudySection>
 

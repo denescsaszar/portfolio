@@ -7,8 +7,8 @@ export default function IdealoCaseStudy() {
     <CaseStudyLayout
       title="idealo"
       subtitle="Coordinated technical integration and partner rollout for one of Europe's leading price comparison platforms, enabling seamless API connectivity."
-      role="Project Manager"
-      timeline="2022 - 2023"
+      role="Project Manager, Austrian Market"
+      timeline="Oct 2020 - Nov 2022"
       industry="E-Commerce / Price Comparison"
     >
       <CaseStudySection title="Overview">
