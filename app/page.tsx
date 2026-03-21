@@ -19,7 +19,7 @@ export default function Home() {
         <section className="min-h-screen flex items-start px-6 md:px-8 pt-24 pb-16 md:pb-24 max-w-wide mx-auto">
           <div className="w-full mt-12 md:mt-20">
             <FadeIn>
-              <p className="text-body-small uppercase tracking-widest text-muted mb-4">
+              <p className="text-body-small tracking-wide text-muted mb-4">
                 Software Engineer & Product Manager
               </p>
             </FadeIn>
@@ -36,7 +36,7 @@ export default function Home() {
 
             <FadeIn delay={0.2}>
               <p className="text-body-large text-muted mb-8 md:mb-12 max-w-[48ch]">
-                7+ years in e-commerce and integrations. Now building full-stack apps.
+                Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.
               </p>
             </FadeIn>
 
@@ -158,7 +158,7 @@ export default function Home() {
                   Challenges & Experiments
                 </h2>
                 <p className="text-body-large text-muted max-w-[44ch]">
-                  Side projects I built to learn new stacks and solve real problems.
+                  Technical projects exploring new stacks and solving real problems.
                 </p>
               </div>
             </FadeIn>
