@@ -38,6 +38,11 @@
   --color-accent: #ffffff;
 }
 
+/* Offset anchor scroll for fixed nav */
+html {
+  scroll-padding-top: 5rem;
+}
+
 /* Base styles */
 body {
   background-color: var(--color-background);
