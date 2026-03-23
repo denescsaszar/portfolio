@@ -247,7 +247,7 @@ export default function Home() {
                   ].map((skill) => (
                     <div
                       key={skill}
-                      className="px-3 md:px-4 py-2 md:py-3 border border-border text-center text-body-small font-medium"
+                      className="px-3 md:px-4 py-2 md:py-3 border border-border text-center text-body-small font-medium transition-all duration-300 hover:border-coral hover:shadow-lg hover:shadow-coral/5 hover:text-coral cursor-default"
                     >
                       {skill}
                     </div>
