@@ -38,7 +38,7 @@ export default function Navigation() {
           className="text-heading-2 font-bold no-underline"
           aria-label="Denes Csaszar - Home"
         >
-          DCS
+          DC
         </Link>
 
         {/* Desktop Navigation */}
