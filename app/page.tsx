@@ -172,6 +172,7 @@ export default function Home() {
                   outcome="Live and deployed. Try it yourself."
                   tags={["Kotlin", "Spring Boot", "Vue 3", "Claude API"]}
                   href="https://gyg-ai-concierge.vercel.app"
+                  linkLabel="Try the live app"
                 />
               </FadeIn>
               <FadeIn delay={0.2}>

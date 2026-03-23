@@ -5,6 +5,7 @@ type ChallengeCardProps = {
   outcome: string;
   tags: string[];
   href: string;
+  linkLabel?: string;
 };
 
 export default function ChallengeCard({
@@ -14,6 +15,7 @@ export default function ChallengeCard({
   outcome,
   tags,
   href,
+  linkLabel = "View on GitHub",
 }: ChallengeCardProps) {
   return (
     <a
@@ -62,7 +64,7 @@ export default function ChallengeCard({
       </div>
 
       <div className="mt-4 md:mt-5 text-body-small text-muted group-hover:text-teal transition-colors duration-300">
-        View on GitHub <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+        {linkLabel} <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
       </div>
     </a>
   );
