@@ -275,7 +275,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
                   <a
                     href="mailto:csaszar.denes@gmail.com"
-                    className="px-5 md:px-6 py-3 bg-accent text-background font-semibold hover:bg-foreground transition-colors no-underline"
+                    className="px-5 md:px-6 py-3 bg-coral text-background font-semibold hover:bg-coral/80 transition-colors no-underline"
                   >
                     Send Email
                   </a>
