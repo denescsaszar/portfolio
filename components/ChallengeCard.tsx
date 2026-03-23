@@ -60,6 +60,10 @@ export default function ChallengeCard({
           </span>
         ))}
       </div>
+
+      <div className="mt-4 md:mt-5 text-body-small text-muted group-hover:text-teal transition-colors duration-300">
+        View on GitHub <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+      </div>
     </a>
   );
 }

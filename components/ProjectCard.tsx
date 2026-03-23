@@ -39,6 +39,12 @@ export default function ProjectCard({
           </span>
         ))}
       </div>
+
+      {href && (
+        <div className="mt-4 md:mt-5 text-body-small text-muted group-hover:text-coral transition-colors duration-300">
+          View case study <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+        </div>
+      )}
     </>
   );
 
