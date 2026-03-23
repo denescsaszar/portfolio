@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://denescsaszar.com"),
-  title: "Denes Csaszar | Software Engineer & Product Manager",
+  title: "Denes Csaszar | Developer & Product Manager",
   description:
     "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery. Berlin & Z\u00fcrich based.",
   keywords: [
-    "Software Engineer",
+    "Developer",
     "Product Manager",
     "Berlin",
     "Kotlin",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://denescsaszar.com",
     siteName: "Denes Csaszar",
-    title: "Denes Csaszar | Software Engineer & Product Manager",
+    title: "Denes Csaszar | Developer & Product Manager",
     description:
       "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Denes Csaszar | Software Engineer & Product Manager",
+    title: "Denes Csaszar | Developer & Product Manager",
     description:
       "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
     images: ["/og"],
@@ -67,7 +67,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Denes Csaszar",
     url: "https://denescsaszar.com",
-    jobTitle: "Software Engineer & Product Manager",
+    jobTitle: "Developer & Product Manager",
     description:
       "7+ years bridging technical execution and business strategy across digital products in DACH & 15 European markets.",
     address: {
