@@ -37,10 +37,10 @@ export const metadata: Metadata = {
       "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og",
         width: 1200,
         height: 630,
-        alt: "Denes Csaszar - Software Engineer & Product Manager",
+        alt: "Denes Csaszar - Developer & Product Manager",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Denes Csaszar | Software Engineer & Product Manager",
     description:
       "Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.",
-    images: ["/og-image.png"],
+    images: ["/og"],
   },
   robots: {
     index: true,
