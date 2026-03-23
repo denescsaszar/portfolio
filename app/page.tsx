@@ -20,7 +20,7 @@ export default function Home() {
           <div className="w-full mt-12 md:mt-20">
             <FadeIn>
               <p className="text-body-small tracking-wide text-muted mb-4">
-                Software Engineer & Product Manager
+                Developer & Product Manager
               </p>
             </FadeIn>
 
@@ -36,7 +36,7 @@ export default function Home() {
 
             <FadeIn delay={0.2}>
               <p className="text-body-large text-muted mb-8 md:mb-12 max-w-[48ch]">
-                Full-stack development paired with 7+ years of e-commerce, API integrations, and product delivery.
+                Full-stack development paired with 8+ years of e-commerce, API integrations, and product delivery.
               </p>
             </FadeIn>
 
@@ -209,7 +209,7 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6 md:mb-8">About</h2>
 
                 <p className="text-body leading-relaxed mb-6">
-                  I spent 7+ years managing products and integrations at Zalando, idealo, and InComm. Shipped across 15 markets, worked with Apple, Google, and ALDI, and learned what makes software projects succeed (and fail).
+                  I spent 8+ years managing products and integrations at Zalando, idealo, and InComm. Shipped across 15 markets, worked with Apple, Google, and ALDI, and learned what makes software projects succeed (and fail).
                 </p>
 
                 <p className="text-body leading-relaxed mb-6">
