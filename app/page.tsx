@@ -269,7 +269,7 @@ export default function Home() {
                 <h2 className="text-heading-1 font-bold mb-6">Let's Talk</h2>
 
                 <p className="text-body leading-relaxed mb-8">
-                  Open to Software Engineer and Product Manager roles. Berlin &amp; Z&uuml;rich based, remote-friendly.
+                  Open to Developer, Product Manager, Project Manager, and Product Owner roles. Berlin &amp; Z&uuml;rich based, remote-friendly.
                 </p>
 
                 <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
