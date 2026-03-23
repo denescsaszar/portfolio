@@ -23,7 +23,7 @@ export default function AppleIcon() {
           fontFamily: "system-ui, sans-serif",
         }}
       >
-        DC
+        DCS
       </div>
     ),
     {
