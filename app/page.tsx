@@ -195,6 +195,16 @@ export default function Home() {
                   href="https://github.com/denescsaszar/stripe-api-portfolio"
                 />
               </FadeIn>
+              <FadeIn delay={0.4}>
+                <ChallengeCard
+                  title="Personio API Portfolio"
+                  problem="Wanted to prove hands-on API integration skills for HR-Tech — not just theory, but real implementations."
+                  approach="Built 3 real-world integration scenarios in Python: Employee Sync with pagination, Applicant Pipeline with POST requests, and SAP XML → Personio JSON transformation. Mirrors what middleware tools like APMonster do in production."
+                  outcome="End-to-end understanding of HR-Tech integrations — from auth to data transformation across JSON and XML formats."
+                  tags={["Python", "Personio API", "REST API", "XML", "JSON"]}
+                  href="https://github.com/denescsaszar/personio-api-portfolio"
+                />
+              </FadeIn>
             </div>
           </div>
         </section>
@@ -230,6 +240,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
                   {[
                     "JavaScript",
+                    "Python",
                     "React",
                     "Next.js",
                     "Node.js",
@@ -237,6 +248,7 @@ export default function Home() {
                     "SQL",
                     "Git",
                     "REST APIs",
+                    "JSON / XML",
                     "Agile / Scrum (PSM I + PSPO I)",
                     "Stakeholder Management",
                     "API Integration",
