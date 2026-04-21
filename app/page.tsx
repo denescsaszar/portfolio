@@ -199,7 +199,7 @@ export default function Home() {
                 <ChallengeCard
                   title="Personio API Portfolio"
                   problem="Wanted to prove hands-on API integration skills for HR-Tech — not just theory, but real implementations."
-                  approach="Built 3 real-world integration scenarios in Python: Employee Sync with pagination, Applicant Pipeline with POST requests, and SAP XML → Personio JSON transformation. Mirrors what middleware tools like APMonster do in production."
+                  approach="Built 3 real-world integration scenarios in Python: Employee Sync with pagination, Applicant Pipeline with POST requests, and SAP XML → Personio JSON transformation. Mirrors what integration middleware does in production HR-Tech stacks."
                   outcome="End-to-end understanding of HR-Tech integrations — from auth to data transformation across JSON and XML formats."
                   tags={["Python", "Personio API", "REST API", "XML", "JSON"]}
                   href="https://github.com/denescsaszar/personio-api-portfolio"
